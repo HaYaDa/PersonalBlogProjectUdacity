@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto; 
+}
+
+html {
+	font-size: 62.5%
+}
+
+header {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+/* .navbar {
+    display: flex; 
+    
+} */
+
+.navList {
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem; ;
+}
+
+.hero  {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    /* display: flex; */
+    margin: 0 1rem; 
+
+}
+
+.card img{
+    width: 100%;
+
+}
+
+.categoryLi {
+    display: flex;
+    gap: 10rem;
+    border-bottom: 1px solid black; 
+    padding-left: 0; 
+}
+
+.container {
+    border: 1px solid black; 
+    margin: 1rem; 
+}
+
+.iconImg {
+    width: 25%;
+}
+
+.recent {
+    display: flex; 
+}
+
+.tags {
+    
+    display: flex;
+    gap: 4rem; 
+    flex-wrap: wrap;
+    font-size: 2rem; 
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; 
+    gap: 2rem; 
+    display: hidden;
+}
+
+.contact {
+
+
+}
+
+.contactHeading {
+    text-align: center;
+}
+
+.contactItem {
+    text-align: center;
+    border: 1px solid black; 
+    margin: 1rem 2rem; 
+    padding-top: 0.5rem; 
+}
+
+.socialIcons {
+    display: flex; 
+    justify-content: left;
+    gap: 3rem;  
+}
+
+.bottomLinks {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.bottomLinks li {
+    list-style-type: none;
+}
+
+.bottomSection {
+    margin: 0 2rem; 
+}
+
+footer {
+    text-align: center;
+}
+
+@media (min-width:600px) {
+
+    .main {
+        display: grid; 
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 'cardWrapper aside' ;
+    }
+    
+
+
+    .cardWrapper {
+        grid-area: cardWrapper; 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'card-one card-two'
+                             'card-three cart-four'; 
+        grid-template-rows: auto;
+        gap: .5rem; 
+    }
+    .card-one {
+        grid-area: card-one;
+    }
+
+
+    .aside {
+        grid-area: aside; 
+    }
+    
+    .itemWrapper {
+        display: flex; 
+        justify-content: center; 
+    }
+
+    .contactItem {
+        width: 30%; 
+    }
+
+    .bottomSection {
+        display: flex;
+        justify-content: center; 
+    }
+
+    .bottomLeft, .bottomLinks {
+        width: 45%; 
+    }
+
+    .bottomLinks {
+        gap: 5rem; 
+    }
+
+}
