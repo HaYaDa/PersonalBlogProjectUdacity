@@ -78,6 +78,10 @@ header {
     cursor: pointer;
 }
 
+.tags p:hover {
+    color: teal; 
+}
+
 .buttons {
     display: flex;
     justify-content: center; 
