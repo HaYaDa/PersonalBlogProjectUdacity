@@ -1,0 +1,19 @@
+.hero  {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    background-color: teal;
+}
+
+.hero h1 {
+    color: white; 
+}
+
+.main {
+    /* display: flex; */
+    /* margin: 0 1rem;  */
+    background-color: black; 
+    color: white;
+
+}

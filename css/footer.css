@@ -1,0 +1,29 @@
+.bottomLinks {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.bottomLinks li {
+    list-style-type: none;
+}
+
+.bottomSection {
+    /* margin: 0 2rem;  */
+    background-color: navy;
+    color: white; 
+}
+
+.bottomLinks li:first-child {
+    font-weight: bolder; 
+    margin-bottom: 1rem;  
+}
+
+footer  {
+    display: flex;
+    height: 5rem;  
+    background-color: black;
+    color: teal;
+    justify-content: center;
+    padding-top: 2rem; 
+}

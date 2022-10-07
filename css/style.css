@@ -1,5 +1,11 @@
+@import "navigation.css";
+@import "main.css"; 
+@import "footer.css"; 
+@import "typography.css"; 
+
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -14,31 +20,14 @@ header {
     display: flex;
     justify-content: space-around; 
     align-items: center;
+    background-color: black;
+    color: teal; 
 }
 
-/* .navbar {
-    display: flex; 
-    
-} */
-
-.navList {
-    display: flex;
-    justify-content: space-around;
-    gap: 5rem; ;
+.card {
+    background-color: teal;
 }
 
-.hero  {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
-}
-
-.main {
-    /* display: flex; */
-    margin: 0 1rem; 
-
-}
 
 .card img{
     width: 100%;
@@ -47,13 +36,26 @@ header {
 
 .categoryLi {
     display: flex;
+    width: 20em;
     gap: 10rem;
-    border-bottom: 1px solid black; 
+    border-bottom: 1px solid teal; 
     padding-left: 0; 
 }
 
+.categoryLi:last-child {
+    border: none; 
+}
+
+.categoryLiLeft {
+    width: 10em;
+}
+
+.categoryLiRight {
+    width: 2em; ;
+}
+
 .container {
-    border: 1px solid black; 
+    /* border: 1px solid black;  */
     margin: 1rem; 
 }
 
@@ -66,11 +68,14 @@ header {
 }
 
 .tags {
-    
     display: flex;
     gap: 4rem; 
     flex-wrap: wrap;
     font-size: 2rem; 
+}
+
+.tags p {
+    cursor: pointer;
 }
 
 .buttons {
@@ -78,10 +83,28 @@ header {
     justify-content: center; 
     gap: 2rem; 
     display: hidden;
+    background-color: teal;
+    padding: 0.5rem; 
+}
+
+.btn {
+    background-color: black; 
+    color: teal;
+    font-weight: bolder;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    border: 2px solid black; 
+    background-color: teal; 
+    color: black;
+    scale: 1.25;
+    border-radius: 5px;
 }
 
 .contact {
-
+    background-color: black;
+    color: teal; 
 
 }
 
@@ -89,6 +112,10 @@ header {
     text-align: center;
 }
 
+.contactHeading p {
+    margin: 0; 
+    padding: 1rem; 
+}
 .contactItem {
     text-align: center;
     border: 1px solid black; 
@@ -102,19 +129,7 @@ header {
     gap: 3rem;  
 }
 
-.bottomLinks {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-}
 
-.bottomLinks li {
-    list-style-type: none;
-}
-
-.bottomSection {
-    margin: 0 2rem; 
-}
 
 footer {
     text-align: center;
@@ -125,7 +140,7 @@ footer {
     .main {
         display: grid; 
         grid-template-columns: 2fr 1fr;
-        grid-template-areas: 'cardWrapper aside' ;
+        grid-template-areas: 'cardWrapper aside';
     }
     
 
@@ -137,7 +152,8 @@ footer {
         grid-template-areas: 'card-one card-two'
                              'card-three cart-four'; 
         grid-template-rows: auto;
-        gap: .5rem; 
+        gap: .5rem;
+        padding: 0.5em;  
     }
     .card-one {
         grid-area: card-one;

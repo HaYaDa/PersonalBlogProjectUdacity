@@ -1,0 +1,11 @@
+.navList {
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem; ;
+    color: teal; 
+}
+
+.navLinks {
+    color: teal; 
+    font-size: 1.5rem;
+}

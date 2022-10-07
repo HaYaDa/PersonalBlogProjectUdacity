@@ -1,0 +1,52 @@
+h1 {
+    font-size: 3rem; ;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.html {
+    color: #e34c26; 
+}
+
+.css {
+    color: #2965f1; 
+}
+
+.border {
+    border: 2px solid teal;
+    border-radius: 5px;
+}
+
+.pad1 {
+    padding: 1%; 
+}
+
+.margin1 {
+    margin: 1%; 
+}
